@@ -4,7 +4,7 @@ import { Button, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'rea
 import io from 'socket.io-client';
 import Chat from './Chat';
 
-const socket = io.connect("http://192.168.29.33:3004")
+const socket = io.connect("https://tic-tac-toe-server-121.herokuapp.com")
 
 export default function App() {
   const [username, setUsername] = useState("");
